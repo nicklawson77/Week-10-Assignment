@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    
+    <div class ="card">
+        <div class ="card-body">
+            <div class ="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-date">Date</label>
+                        <input type="date" class="form-control" id="new-date" placeholder="Date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="start-time">Start Time</label>
+                        <input type="time" class="form-control" id="start-time" placeholder="Start-Time">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="end-time">End Time</label>
+                        <input type="time" class="form-control" id="end-time" placeholder="End-Time">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-workout">Workout</label>
+                        <input type="text" class="form-control" id="new-workout" placeholder="Workout">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id ="add" class="btn btn-primary form-control">Add Workout</button>
+            </div>
+            </div>
+        </div>
+    
+<table id="list" class="table table-dark table-striped">
+  <tr>
+        <th>Workout</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Date</th>
+        <th>Action</th>
+    </tr>
+</table>
+<p></p>
+
+<script src = "week10Assignment.js"></script>
+<script src = "node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
